@@ -1,0 +1,109 @@
+ion-content {
+    --background: url('../../assets/image/logo.png');
+}
+
+ion-title {
+    font-family: "Cairo", sans-serif;
+    position: absolute;
+    left: 50%;
+}
+
+.imgg {
+    width: 45%;
+    position: absolute;
+    margin-left: 26%;
+    top: 10%;
+    background: none;
+}
+
+
+.chaine {
+    top: 150px;
+    font-family: 'Cairo';
+
+    text-align: center;
+    position: relative;
+}
+
+.abc {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    top: 170px;
+    position: relative;
+}
+
+.grid-column {
+    border: 1px #e1c007 dashed;
+}
+
+
+.lab {
+    top: 32px;
+    position: absolute;
+    font-family: 'Cairo', sans-serif;
+}
+
+.labb {
+    top: 10px;
+    position: absolute;
+}
+
+.pos {
+    position: relative;
+    top: -40px;
+}
+
+.resize {
+    margin-left: 15%;
+    position: relative;
+    right: -100%;
+    width: 220%;
+    height: 220%;
+}
+
+.btnImg {
+    position: relative;
+    left: 50%;
+    top: 160px;
+    height: 29px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.btnImg1 {
+    position: relative;
+    left: -35%;
+    top: 160px;
+    height: 29px;
+    font-family: "Cairo", sans-serif;
+}
+
+.modals {
+    position: relative;
+    /* top: 25px; */
+    display: flex;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 1%;
+    margin-left: -75%;
+    margin-right: 10%;
+}
+
+@media only screen and (max-width: 320px) {
+    .resize {
+        position: relative;
+        left: -45px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .modals {
+        position: relative;
+        /* top: 25px; */
+        display: flex;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 1%;
+        margin-left: -88%;
+        margin-right: 10%;
+    }
+
+
+}

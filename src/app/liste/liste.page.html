@@ -1,0 +1,210 @@
+<ion-header>
+  <ion-toolbar><ion-img src="../assets/image/a.png"  width='70px' height='2px' style="float:left; margin-left:2%;top:'550px';"></ion-img>
+
+    <ion-title  color="primary"> الدوائر</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list class ="filtre" style="position:absolute;left:12%;">
+    <ion-item color="warning">
+      <ion-label  class="search" color="primary" ><b>ابحث عن الدائرة</b></ion-label>
+      <ion-select (ionChange)="onContextChange($event.detail.value)" id="selection" value="brown" okText="موافق" cancelText="رجوع">
+          <div *ngFor="let circonscription of circonscription">
+            <ion-select-option value={{circonscription.nom}}> {{ circonscription.nom }} </ion-select-option>
+          </div>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="legrid">
+         <ion-grid>
+           <ion-row >
+               <div  *ngFor="let listeC of listeC">
+                 <ion-col size="2" *ngIf="(listeC.id == 11)"><ion-img src="../assets/image/4.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+     
+                 <ion-col size="2" *ngIf="(listeC.id == 23)"><ion-img src="../assets/image/16.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+       
+               <ion-col size="2" *ngIf="(listeC.id == 19)" ><ion-img src="../assets/image/12.png" (click)="DetailsPage(listeC)"></ion-img>
+             </ion-col> 
+ 
+             <ion-col size="2" *ngIf="(listeC.id == 15)"><ion-img src="../assets/image/8.png" (click)="DetailsPage(listeC)"></ion-img>
+             </ion-col>
+               </div>
+         </ion-row>
+   </ion-grid> 
+   
+      
+ 
+       <ion-grid>
+         <ion-row >
+             <div  *ngFor="let listeC of listeC">
+                   <ion-col size="2" *ngIf="(listeC.id == 3)" ><ion-img src="../assets/image/3.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+           
+                   <ion-col size="2" *ngIf="(listeC.id == 22)"><ion-img src="../assets/image/15.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col> 
+ 
+                 <ion-col size="2" *ngIf="(listeC.id == 14)"><ion-img src="../assets/image/7.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+ 
+                 <ion-col size="2" *ngIf="(listeC.id == 18)"><ion-img src="../assets/image/11.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+               </div>
+             </ion-row>
+       </ion-grid>
+ 
+ 
+   
+       <ion-grid>
+         <ion-row >
+             <div  *ngFor="let listeC of listeC">
+               <ion-col size="2" *ngIf="(listeC.id == 2)" ><ion-img src="../assets/image/2.png" (click)="DetailsPage(listeC)"></ion-img>
+               </ion-col>
+ 
+                 <ion-col size="2" *ngIf="(listeC.id == 13)"><ion-img src="../assets/image/6.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+             
+                 <ion-col size="2" *ngIf="(listeC.id == 17)"><ion-img src="../assets/image/10.png" (click)="DetailsPage(listeC)"></ion-img>
+                </ion-col>
+             
+                 <ion-col size="2" *ngIf="(listeC.id == 21)"><ion-img src="../assets/image/14.png" (click)="DetailsPage(listeC)"></ion-img>
+                </ion-col>
+               </div>
+          </ion-row>
+   </ion-grid>
+    
+ <ion-grid>
+           <ion-row >
+               <div  *ngFor="let listeC of listeC">
+                     <ion-col size="2" *ngIf="(listeC.id == 12)"><ion-img src="../assets/image/5.png" (click)="DetailsPage(listeC)"></ion-img>
+                       </ion-col>
+             
+                       <ion-col size="2" *ngIf="(listeC.id == 16)"><ion-img src="../assets/image/9.png" (click)="DetailsPage(listeC)"></ion-img>
+                     </ion-col>
+               
+                       <ion-col size="2" *ngIf="(listeC.id == 20)"><ion-img src="../assets/image/13.png" (click)="DetailsPage(listeC)"></ion-img>
+                     </ion-col> 
+                     <ion-col size="2" *ngIf="(listeC.id == 1)"><ion-img src="../assets/image/1.png" (click)="DetailsPage(listeC)"></ion-img>
+                     </ion-col>
+                   </div>
+                 </ion-row>
+           </ion-grid>
+ 
+                   <ion-grid>
+                     <ion-row >
+                     <div  *ngFor="let listeC of listeC">
+         
+                   <ion-col size="2" *ngIf="(listeC.id == 27)"><ion-img src="../assets/image/20.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+           
+                   <ion-col style="position:relative;top:1px;"  size="2" *ngIf="(listeC.id == 32)"><ion-img src="../assets/image/6/5.5.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col> 
+ 
+                 <ion-col size="2" *ngIf="(listeC.id == 7)"><ion-img src="../assets/image/24.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+             
+                 <ion-col style="position:relative;top:1px;" size="2" *ngIf="(listeC.id == 28)"><ion-img src="../assets/image/6/1.1.png" (click)="DetailsPage(listeC)"></ion-img>
+                </ion-col>
+
+
+               </div>
+             </ion-row>
+       </ion-grid>
+                      
+       
+                     <ion-grid>
+                        <ion-row >
+                <div *ngFor="let listeC of listeC">
+                  
+                 <ion-col size="2" *ngIf="(listeC.id == 31)"><ion-img src="../assets/image/6/4.4.png" (click)="DetailsPage(listeC)"></ion-img>
+                </ion-col>
+               
+                <ion-col size="2" *ngIf="(listeC.id == 26)"><ion-img src="../assets/image/19.png" (click)="DetailsPage(listeC)"></ion-img>
+                </ion-col>
+      
+                <ion-col size="2" *ngIf="(listeC.id == 6)"><ion-img src="../assets/image/23.png" (click)="DetailsPage(listeC)"></ion-img>
+              </ion-col>
+        
+                <ion-col size="2" *ngIf="(listeC.id == 10)"><ion-img src="../assets/image/27.png" (click)="DetailsPage(listeC)"></ion-img>
+              </ion-col> 
+             </div>
+          </ion-row>
+             </ion-grid>
+             
+ 
+ 
+            <ion-grid>
+                <ion-row >
+          <div  *ngFor="let listeC of listeC">
+                 <ion-col size="2" *ngIf="(listeC.id == 25)"><ion-img src="../assets/image/18.png" (click)="DetailsPage(listeC)"></ion-img>
+                   </ion-col>
+         
+                   <ion-col size="2" *ngIf="(listeC.id == 5)"><ion-img src="../assets/image/22.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+           
+                   <ion-col size="2" *ngIf="(listeC.id == 9)"><ion-img src="../assets/image/26.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col> 
+ 
+                 <ion-col size="2" *ngIf="(listeC.id == 30)"><ion-img src="../assets/image/6/3.3.png" (click)="DetailsPage(listeC)"></ion-img>
+                 </ion-col>
+               
+               </div>
+             </ion-row>
+       </ion-grid>
+           
+ 
+               <ion-grid>
+                   <ion-row >
+             <div  *ngFor="let listeC of listeC">
+ 
+             <ion-col size="2" *ngIf="(listeC.id == 24)"><ion-img src="../assets/image/17.png" (click)="DetailsPage(listeC)"></ion-img>
+            </ion-col>
+         
+           
+ 
+            <ion-col size="2" *ngIf="(listeC.id == 4)"><ion-img src="../assets/image/21.png" (click)="DetailsPage(listeC)"></ion-img>
+            </ion-col>
+  
+            <ion-col size="2"  *ngIf="(listeC.id == 8)"><ion-img src="../assets/image/25.png" (click)="DetailsPage(listeC)"></ion-img>
+          </ion-col>
+     
+          <ion-col size="2" *ngIf="(listeC.id == 29)"><ion-img src="../assets/image/6/2.2.png" (click)="DetailsPage(listeC)"></ion-img>
+          </ion-col> 
+          <ion-col size="2" *ngIf="(listeC.id == 33)"><ion-img src="../assets/image/6/6.6.png" (click)="DetailsPage(listeC)"></ion-img>
+          </ion-col>
+        </div>
+         </ion-row>
+         </ion-grid>
+   </div>
+  
+</ion-content>
+
+
+<ion-tab-bar slot="bottom"  color="warning">
+  <ion-tab-button routerLink="/resultat">
+    <ion-img class="labb" src="../assets/image/1a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">النتائج
+    </ion-label>
+  </ion-tab-button>
+
+<ion-tab-button routerLink="/liste">
+  <ion-img class="labb" src="../assets/image/2a.png" color="primary"></ion-img>
+<ion-label  class="lab" color="primary">القائمات
+</ion-label>
+</ion-tab-button>
+
+<ion-tab-button  routerLink="/client">
+  <ion-img class="labb" src="../assets/image/3a.png" color="primary"></ion-img>
+<ion-label class="lab"  color="light">من نحن
+</ion-label>
+</ion-tab-button>
+
+<ion-tab-button  routerLink="/home">
+  <ion-img class="labb" src="../assets/image/4a.png" color="primary"></ion-img>
+  <ion-label class="lab" color="light">تشريعية 2019
+  </ion-label>
+</ion-tab-button>
+</ion-tab-bar>

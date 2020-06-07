@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="right"> البيان الانتخابي <ion-icon
+      ios="ios-arrow-dropright" md="md-arrow-dropright" color="primary" (click)="closeManif()" ></ion-icon> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="manifeste != null">
+
+        <ion-img  [src]=manifeste> </ion-img> 
+    
+     </div>
+
+        <div *ngIf="manifeste == null" >
+            <div class="centered">البيان الإنتخابي غير متوفّر حاليا</div>
+            <img style="width: 1000px;
+        height: 1000px;
+        overflow: hidden; z-index: -1;" src="../assets/image/logo.png">
+        </div>
+
+</ion-content>
+

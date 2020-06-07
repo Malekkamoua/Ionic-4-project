@@ -1,0 +1,146 @@
+.search {
+  position: absolute;
+  right: 30px;
+  top: -16px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.filtre {
+  background-color: rgb(225, 192, 7);
+  top: 34px;
+  width: 75%;
+  height: 35px;
+  border-radius: 1000px;
+  position: absolute;
+}
+
+ion-select {
+  color: #083378;
+  top: -10px;
+  position: relative;
+  width: 70px;
+  right: -5px;
+}
+
+ion-title {
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  left: 70%;
+}
+
+ion-content {
+  --background: url('../../assets/image/logo.png');
+}
+
+.lab {
+  top: 32px;
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+}
+
+.labb {
+  top: 10px;
+  position: absolute;
+}
+
+.cheks {
+  --background-checked: #ffffff;
+
+  background: #ffffff;
+
+}
+
+.chekss {
+  --background-checked: #e1c007;
+
+  background: #e1c007;
+
+}
+
+.welcome-card {
+  top: 9px;
+  position: relative;
+}
+
+.abc {
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+}
+
+.grid-column {
+  border: 1px #e1c007 dashed;
+}
+
+.butt1 {
+  font-family: 'Cairo', sans-serif;
+  color: #083378;
+  width: 70px;
+  height: 25px;
+  border-radius: 100%;
+  left: 155px;
+  position: absolute;
+}
+
+.tableau {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 33% 33% 33%;
+  position: relative;
+  left: 26px;
+}
+h2{
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 12px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+.ph {
+  text-align: center;
+  top: 13px;
+  font-family: "Cairo", sans-serif;
+  color: #e1c007;
+  position: relative;
+  left: 25%;
+  direction: rtl;
+}
+
+.ph1 {
+  text-align: center;
+  color: #ffffff;
+  top: 20px;
+  font-family: "Cairo", sans-serif;
+  position: relative;
+  left: 35px;
+  direction: rtl;
+}
+
+.img {
+  width: 60%;
+  top: 60%;
+  position: relative;
+}
+
+.butt {
+  font-family: 'Cairo', sans-serif;
+  color: #083378;
+  width: 70px;
+  height: 25px;
+  border-radius: 100%;
+  position: relative;
+  top: 10px;
+  ;
+  left: 20px;
+}
+
+.grid {
+  position: relative;
+  top: 25px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1%;
+  margin-left: -20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,141 @@
+<ion-header>
+    <ion-toolbar >
+        <ion-img src="../assets/image/a.png"  width='70px' height='2px' style="float:left; margin-left:2%;top:'550px';"></ion-img>
+        <ion-title align="right" style="font-family: 'Cairo', sans-serif;" color="primary">تفاصيل الدائرة<ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" color="primary" routerLink="/liste"></ion-icon></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-title  class="vv" color="warning"><b>اسم الدائرة</b> </ion-title>   
+        <br>
+        <ion-grid>
+            <ion-row class="abc">
+<ion-col class="grid-column" style="margin-left:25px;">
+<ion-text color="light">عدد القائمات المترشحة</ion-text>
+              </ion-col>
+<ion-col class="grid-column" style="margin-right:25px;" >    
+<ion-text color="light"  >عدد المقاعد</ion-text>
+              </ion-col>
+            </ion-row>
+
+            <ion-row  class="abc">
+ <ion-col class="grid-column" style="margin-left:25px;">
+    <ion-text color="light" >...</ion-text>
+               </ion-col>
+  <ion-col class="grid-column" style="margin-right:25px;" >
+      <ion-text color="light">...</ion-text>
+                </ion-col> 
+              </ion-row>
+
+        </ion-grid>
+
+      <div>
+        
+          <ion-list class ="filtre1" style="position:relative;left:14%;">
+              <ion-item color="warning">
+                <ion-label class="search1" color="primary" ><b>اضغط هنا لتغيير نوعية القائمة</b></ion-label>
+                <ion-select   okText="موافق" cancelText="رجوع" >
+                  <ion-select-option  value="f">...</ion-select-option>
+                  <ion-select-option  value="m">...</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
+      </div>
+
+    
+<!-- <div class="tableau">
+        <ion-grid padding >
+          <ion-row>
+          <ion-col>
+              <ion-img class= "img"src="../assets/image/c.png"></ion-img>
+             <ion-text class="ph" >fgyh</ion-text>
+             <ion-text class="ph1">gujik</ion-text>
+             <ion-button shape="round" color="warning" class="butt"><ion-label color="primary" routerLink="/composant"><b>التفاصيل</b></ion-label></ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-img class= "img"src="../assets/image/c.png"></ion-img>
+               <ion-text class="ph" >fgyh</ion-text>
+               <ion-text class="ph1">gujik</ion-text>
+               <ion-button shape="round" color="warning" class="butt"><ion-label color="primary" routerLink="/composant"><b>التفاصيل</b></ion-label></ion-button>
+              </ion-col>
+              <ion-col>
+                  <ion-img class= "img"src="../assets/image/c.png"></ion-img>
+                 <ion-text class="ph" >fgyh</ion-text>
+                 <ion-text class="ph1">gujik</ion-text>
+                 <ion-button shape="round" color="warning" class="butt"><ion-label color="primary" routerLink="/composant"><b>التفاصيل</b></ion-label></ion-button>
+                </ion-col>
+
+                <ion-col>
+                    <ion-img class= "img"src="../assets/image/c.png"></ion-img>
+                   <ion-text class="ph" >fgyh</ion-text>
+                   <ion-text class="ph1">gujik</ion-text>
+                   <ion-button shape="round" color="warning" class="butt"><ion-label color="primary" routerLink="/composant"><b>التفاصيل</b></ion-label></ion-button>
+                  </ion-col>
+          </ion-row>
+          </ion-grid>
+        </div> -->
+
+        <div class="tableau" padding>
+    
+            <h1><ion-col>
+                <ion-img class= "img"src="../assets/image/c.png"></ion-img>
+                <ion-text class="ph" >fgyh</ion-text>
+                <br>
+               <ion-text class="ph1">gujik</ion-text>
+               <ion-button shape="round" color="warning" class="butt"><ion-label color="primary" routerLink="/composant"><b>التفاصيل</b></ion-label></ion-button>
+              </ion-col></h1>
+
+              <h1><ion-col>
+                  <ion-img class= "img"src="../assets/image/c.png"></ion-img>
+                 <ion-text class="ph">fgyh</ion-text>
+                 <br>
+                 <ion-text class="ph1">gujik</ion-text>
+                 <ion-button shape="round" color="warning" class="butt"><ion-label color="primary" routerLink="/composant"><b>التفاصيل</b></ion-label></ion-button>
+                </ion-col></h1>
+
+          <h1><ion-col>
+              <ion-img class= "img"src="../assets/image/c.png"></ion-img>
+             <ion-text class="ph" >fgyh</ion-text>
+             <br>
+             <ion-text class="ph1">gujik</ion-text>
+             <ion-button shape="round" color="warning" class="butt"><ion-label color="primary" routerLink="/composant"><b>التفاصيل</b></ion-label></ion-button>
+            </ion-col></h1>
+
+            <h1><ion-col>
+                <ion-img class= "img"src="../assets/image/c.png"></ion-img>
+               <ion-text class="ph" >fgyh</ion-text>
+               <br>
+               <ion-text class="ph1">gujik</ion-text>
+               <ion-button shape="round" color="warning" class="butt"><ion-label color="primary" routerLink="/composant"><b>التفاصيل</b></ion-label></ion-button>
+              </ion-col></h1>
+        </div>
+  </ion-content>
+
+
+
+  <ion-tab-bar slot="bottom"  color="warning">
+      <ion-tab-button routerLink="/resultat">
+        <ion-img class="labb" src="../assets/image/1a.png" color="primary"></ion-img>
+        <ion-label class="lab" color="light">النتائج
+        </ion-label>
+      </ion-tab-button>
+    
+    <ion-tab-button routerLink="/liste">
+      <ion-img class="labb" src="../assets/image/2a.png" color="primary"></ion-img>
+    <ion-label  class="lab" color="primary">الدوائر
+    </ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button  routerLink="/client">
+      <ion-img class="labb" src="../assets/image/3a.png" color="primary"></ion-img>
+    <ion-label class="lab"  color="light">من نحن
+    </ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button  routerLink="/home">
+      <ion-img class="labb" src="../assets/image/4a.png" color="primary"></ion-img>
+      <ion-label class="lab" color="light">تشريعية 2019
+      </ion-label>
+    </ion-tab-button>
+
+    </ion-tab-bar>

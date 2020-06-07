@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-img src="../assets/image/a.png" width='70px' height='2px' style="float:left; margin-left:2%;top:'550px';">
+    </ion-img>
+    <ion-title color="primary"> النتائج</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-segment>
+    <ion-segment-button routerLink="/resultat1" class="chekss">
+      <ion-label color="primary" shape="round" style="font-family: 'Cairo', sans-serif;"> <b>نتائج الدوائر</b>
+      </ion-label>
+    </ion-segment-button>
+    <ion-segment-button routerLink="/resultat2" class="cheks">
+      <ion-label color="primary" style="font-family: 'Cairo', sans-serif;"><b>نتائج مجلس نواب الشعب</b></ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-label color="light" style="position:relative; top:8px;margin-left:20%;font-family:'Cairo', sans-serif;"><b>توزيع
+      المقاعد في مجلس نواب </b></ion-label>
+
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
+
+
+  <div>
+    <ion-grid padding>
+      <div *ngFor="let resultatTab of resultatTab">
+
+        <ion-row class="abc">
+
+          <ion-col class="grid-column" style="margin-left:25px;">
+            <div *ngFor="let resultatTotalInscrit of resultatTotalInscrit">
+              <ion-text color="light"> عدد المسجلين</ion-text>
+              <ion-label color="warning"><b>
+                  {{resultatTotalInscrit.totalInscrits}} </b></ion-label>
+            </div>
+
+          </ion-col>
+          <ion-col class="grid-column" style="margin-right:-1px;">
+            <ion-text color="light"> عدد القائمات</ion-text> <br>
+            <ion-label color="warning"><b> {{resultatTab.totalListes}}</b></ion-label>
+
+          </ion-col>
+          <ion-col class="grid-column" style="margin-right:25px;">
+            <ion-text color="light">عدد المقاعد</ion-text> <br>
+            <ion-label color="warning"><b>{{resultatTab.totalSieges}}</b></ion-label>
+
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="abc">
+          <ion-col class="grid-column" style="margin-left:25px;">
+            <ion-text color="light">نسبة المشاركة</ion-text><br>
+            <ion-label color="warning"><b>{{tauxPart}} %</b></ion-label>
+
+          </ion-col>
+          <ion-col class="grid-column" style="margin-right:25px;">
+            <ion-text color="light">الاصوات</ion-text> <br>
+            <ion-label color="warning"><b>{{resultatTab.totalVotes}}</b></ion-label>
+          </ion-col>
+
+        </ion-row>
+      </div>
+    </ion-grid>
+  </div>
+
+  <div class="grid">
+  
+      <div class="col" *ngFor="let Allres of Allres">
+        
+          <ion-thumbnail *ngIf="Allres.logo != null" item-start>
+            <ion-avatar>
+                <ion-img style="margin-left:33px;top:15px;" [src]=Allres.logo> </ion-img> 
+              </ion-avatar>
+              </ion-thumbnail>
+
+                <ion-thumbnail *ngIf="Allres.logo == null" item-start>
+                <ion-avatar>
+                <img style="margin-left:35px;top:-10px;position:relative;width:100px;height:70px;" src="../assets/image/c.png">
+              </ion-avatar>
+            </ion-thumbnail>
+
+            <ion-label  class="ph1"> <b style="font-weight: bold;
+              position: relative;
+              /* align-content: center; */
+              left: -10%;">{{Allres.nom}}</b></ion-label>
+            <ion-label class="ph"><h2>{{Allres.pourcentage}} % <br></h2></ion-label>
+      </div>
+
+</div>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom" color="warning">
+  <ion-tab-button routerLink="/resultat">
+    <ion-img class="labb" src="../assets/image/1a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="primary">النتائج
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/liste">
+    <ion-img class="labb" src="../assets/image/2a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">القائمات
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/client">
+    <ion-img class="labb" src="../assets/image/3a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">من نحن
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/home">
+    <ion-img class="labb" src="../assets/image/4a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">تشريعية 2019
+    </ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

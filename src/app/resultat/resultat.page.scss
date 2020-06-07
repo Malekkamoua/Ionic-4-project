@@ -1,0 +1,102 @@
+
+.pictures {
+  background-image: url('../../assets/image/logo.png');
+  position: absolute;
+  left: 1592px;
+  top: 799px;
+  width: 755px;
+  height: 906px;
+  z-index: 15;
+}
+.btnImg {
+  position: relative;
+  left: 50%;
+  top: 160px;
+  height: 29px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.btnImg1 {
+  position: relative;
+  left: -35%;
+  top: 160px;
+  height: 29px;
+  font-family: "Cairo", sans-serif;
+}
+
+.modals {
+  position: relative;
+  /* top: 25px; */
+  display: flex;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1%;
+  margin-left: -75%;
+  margin-right: 10%;
+}
+
+.imageWaiting{
+  height: 600px;
+  width: 100%;
+}
+ion-title {
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  left: 70%;
+}
+
+.filtre {
+  background-color: rgb(225, 192, 7);
+  top: 40px;
+  width: 310px;
+  height: 35px;
+  border-radius: 1000px;
+  position: absolute;
+}
+
+ion-select {
+  color: #083378;
+  top: -10px;
+  position: relative;
+  width: 70px;
+  right: -5px;
+}
+
+ion-content {
+  --background: url('../../assets/image/backgroungResultat.png') no-repeat center center / cover;
+}
+
+.lab {
+  top: 32px;
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+}
+
+.labb {
+  top: 10px;
+  position: absolute;
+}
+
+.cheks {
+  --background-checked: #ffffff;
+
+  background: #e1c007;
+}
+
+.chekss {
+  --background-checked: #e1c007;
+
+  background: #ffffff;
+}
+
+.search {
+  position: absolute;
+  right: 30px;
+  top: -16px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.moveBtns{
+  height: 100px;
+  position: relative;
+  top: -75%;
+}

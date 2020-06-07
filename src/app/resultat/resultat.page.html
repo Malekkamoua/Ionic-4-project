@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-img src="../assets/image/a.png" width='70px' height='2px' style="float:left; margin-left:2%;top:'550px';">
+    </ion-img>
+    <ion-title color="primary"> النتائج</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div *ngFor="let resultatIndependant of resultatIndependant">
+
+
+    <div *ngIf=resultatIndependant.ShowImage>
+
+
+      <div class="imageWaiting">
+
+        <img src="../../assets/image/logo.png" width="100%" height="600px">
+
+        <div class="moveBtns">
+          <ion-button color="warning" expand="block" routerLink="/resultat2" style="height: 30px;
+        width: 75%;
+        position: relative;
+        top: 27%;
+        left: 12%;
+        font-family: 'Cairo', sans-serif;"> نتائج مجلس نواب الشعب </ion-button>
+
+          <ion-button color="warning" expand="block" routerLink="/resultat1" style="height: 30px;
+        width: 75%;
+        position: relative;
+        top: 40%;
+        left: 12%;
+        font-family: 'Cairo', sans-serif;"> نتائج الدوائر </ion-button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+
+<ion-tab-bar slot="bottom" color="warning">
+  <ion-tab-button routerLink="/resultat">
+    <ion-img class="labb" src="../assets/image/1a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="primary">النتائج
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/liste">
+    <ion-img class="labb" src="../assets/image/2a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">القائمات
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/client">
+    <ion-img class="labb" src="../assets/image/3a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">من نحن
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/home">
+    <ion-img class="labb" src="../assets/image/4a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">تشريعية 2019
+    </ion-label>
+  </ion-tab-button>
+</ion-tab-bar>

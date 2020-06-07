@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="right"> القائمة <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" color="primary"
+        (click)="closeMembres()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="membre != null">
+
+    <ion-img [src]=membre> </ion-img>
+
+  </div>
+
+  <div *ngIf="membre == null">
+
+    <div class="centered"> القائمة غير متوفّرة حاليا </div>
+    <img style="width: 1000px;
+        height: 1000px;
+        overflow: hidden;" src="../assets/image/logo.png">
+  </div>
+</ion-content>

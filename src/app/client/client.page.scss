@@ -1,0 +1,37 @@
+.lab {
+  top: 32px;
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+}
+
+.labb {
+  top: 10px;
+  position: absolute;
+}
+
+
+ion-content {
+  --background: url('../../assets/image/client.png') no-repeat center center / cover;
+}
+
+ion-title {
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  left: 70%;
+}
+
+.socialM {
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 15%;
+  left: 37%;
+  top: 35%;
+}
+
+.socialD {
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 15%;
+  left: 37%;
+  top: 90%;
+}

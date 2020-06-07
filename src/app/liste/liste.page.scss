@@ -1,0 +1,78 @@
+.filtre {
+  background-color: rgb(225, 192, 7);
+  top: 5%;
+  width: 75%;
+  height: 35px;
+  border-radius: 1000px;
+  position: relative;
+  right: 2%;
+}
+
+ion-title {
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  left: 70%;
+}
+
+b {
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  top: -4px;
+}
+
+ion-select {
+  color: #083378;
+  top: -10px;
+  position: relative;
+  width: 70px;
+  left: -15%;
+}
+
+ion-content {
+  --background: url('../../assets/image/logo.png');
+
+}
+
+.search {
+  position: absolute;
+  right: 30px;
+  top: -10px;
+  font-size: 1em;
+  font-family: 'Cairo', sans-serif;
+}
+
+.lab {
+  top: 32px;
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+}
+
+.labb {
+  top: 10px;
+  position: absolute;
+}
+
+.aaaaa {
+  left: 55px;
+  position: relative;
+}
+
+ion-slides {
+  --bullet-background: #ffffff;
+  --bullet-background-active: #ffd31a;
+  top: 80px;
+}
+
+
+.legrid {
+  margin: 25% 5% 5% 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5%;
+}
+
+.tabs {
+  left: 55px;
+  position: relative;
+}

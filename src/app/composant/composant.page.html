@@ -1,0 +1,75 @@
+<ion-header>
+    <ion-toolbar><ion-img src="../assets/image/a.png"  width='70px' height='2px' style="float:left; margin-left:2%;top:'550px';"></ion-img>
+      <ion-title align="right" style="font-family: 'Cairo', sans-serif;" color="primary">تفاصيل القائمة</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+    <ion-img class="imgg" src="../assets/image/c.png" ></ion-img>
+    <ion-avatar item-start> 
+      </ion-avatar>
+
+      <ion-text class="chaine"  color="warning"><h1>اسم القائمة</h1></ion-text>
+  <ion-text class="chaine" color="light"><h5>اسم الدائرة</h5></ion-text>
+
+
+
+  <ion-grid>
+    <ion-row class="abc">
+<ion-col class="grid-column" style="margin-left:27px;">
+<ion-text color="light"> عدد القائمة </ion-text>
+    </ion-col>
+ 
+     <ion-col class="grid-column" style="margin-right:-1px;" >    
+     <ion-text color="light"> نوع القائمة </ion-text>
+        </ion-col>
+      <ion-col class="grid-column" style="margin-right:40px;" >    
+      <ion-text color="light"> رئيس القائمة </ion-text>
+        </ion-col>
+    </ion-row>
+
+      <ion-row  class="abc">
+<ion-col class="grid-column" style="margin-left:27px;">
+<ion-text color="light" >...</ion-text>
+         </ion-col>
+         <ion-col class="grid-column" style="margin-right:-1px;" >    
+            <ion-text color="light"  >...</ion-text>
+           </ion-col>
+           <ion-col class="grid-column" style="margin-right:40px;" >    
+            <ion-text color="light"  >...</ion-text>
+           </ion-col>
+        </ion-row>
+
+  </ion-grid>
+  <ion-button shape="round" color="warning" class="bt"><ion-label color="primary" routerLink="/"><b> البيان الانتخابي</b></ion-label></ion-button>
+  <ion-button shape="round" color="warning" class="bt1"><ion-label color="primary" routerLink="/"><b>رؤية القائمة </b></ion-label></ion-button>
+
+</ion-content>
+
+
+
+<ion-tab-bar slot="bottom"  color="warning">
+    <ion-tab-button routerLink="/resultat">
+      <ion-img class="labb" src="../assets/image/1a.png" color="primary"></ion-img>
+      <ion-label class="lab" color="light">النتائج
+      </ion-label>
+    </ion-tab-button>
+  
+  <ion-tab-button routerLink="/liste">
+    <ion-img class="labb" src="../assets/image/2a.png" color="primary"></ion-img>
+  <ion-label class="lab"  color="primary">الدوائر
+  </ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button  routerLink="/client">
+    <ion-img class="labb" src="../assets/image/3a.png" color="primary"></ion-img>
+  <ion-label class="lab" color="light">من نحن
+  </ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button  routerLink="/home">
+    <ion-img class="labb" src="../assets/image/4a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">تشريعية 2019
+    </ion-label>
+  </ion-tab-button>
+  </ion-tab-bar>

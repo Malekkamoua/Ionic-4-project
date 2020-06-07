@@ -1,0 +1,96 @@
+ion-content{
+    --background:url('../../assets/image/logo.png');
+   }
+
+   .vv{
+    font-family: 'Cairo', sans-serif;
+       width:100%;
+       text-align: center;
+   }
+   .abc{
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+   }
+
+   .grid-column{
+   border: 1px #e1c007 dashed;   
+}
+
+.filtre1{
+    background-color: rgb(225, 192, 7);
+     width:290px;
+     height:35px;
+     border-radius: 1000px;
+     right:30%;
+     position:absolute;
+     top:50px;
+     
+    }
+
+    ion-select{
+        color:#083378;
+        top:-10px;
+        position:relative;
+        width: 70px;
+        right:16px;
+        }
+        
+    .search1{
+        position:absolute;
+        right:15px;
+        top:-16px;
+        font-family: 'Cairo', sans-serif;
+        text-align: center;
+    }        
+
+    .lab{
+        top:32px;
+        position: absolute;
+        font-family: 'Cairo', sans-serif;
+        }
+        .labb{
+          top:10px;
+        position: absolute;
+        }
+   
+        .ph{
+            text-align: center;
+        
+            font-family: 'Cairo', sans-serif;
+            color:#e1c007;
+            position:relative;
+            left:9px;
+        }   
+        
+        .ph1{
+            text-align: center;
+            color:#ffffff;
+        
+            font-family: 'Cairo', sans-serif;
+            position:relative;
+           left:9px;
+        }  
+
+        .img{
+            width: 60%;
+            top:60%;
+            position:relative;
+        }
+
+        .butt{
+            font-family:'Cairo', sans-serif ;
+            color:#083378;
+            width:70px;
+            height:25px;
+            border-radius: 100%;
+            position:absolute;
+            top:185px;
+            left:-4px;
+        }
+.tableau{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 33% 33% 33%;
+    position: relative;
+    left:26px;
+}

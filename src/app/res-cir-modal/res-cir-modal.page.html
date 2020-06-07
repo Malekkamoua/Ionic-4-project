@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> نتائج الدائرة <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" color="primary"
+        (click)="closeModal()" routerLink="/resultat1"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
+  <div>
+    <ion-label color="warning" width="60px"><b>
+        <h1>{{nomCc}}</h1>
+      </b></ion-label>
+
+    <ion-grid>
+
+      <ion-row class="abc">
+
+        <ion-col class="grid-column" style="margin-left:25px;">
+          <ion-text color="light"> عدد المسجلين</ion-text> <br><b>
+            <ion-label color="warning">{{NombreInscrits}}</ion-label>
+          </b>
+
+        </ion-col>
+        <ion-col class="grid-column" style="margin-right:-1px;">
+          <ion-text color="light"> عدد القائمات</ion-text> <br><b>
+            <ion-label color="warning"> {{NombreListes}}</ion-label>
+          </b>
+
+        </ion-col>
+        <ion-col class="grid-column" style="margin-right:25px;">
+          <ion-text color="light">:عدد المقاعد</ion-text> <br> <b>
+            <ion-label color="warning"> {{NombreSiege}}</ion-label>
+          </b>
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="abc">
+        <ion-col class="grid-column" style="margin-left:25px;">
+          <ion-text color="light">نسبة المشاركة</ion-text> <br> <b>
+            <ion-label color="warning"> {{TauxParticipation}} %</ion-label>
+          </b>
+
+
+        </ion-col>
+        <ion-col class="grid-column" style="margin-right:25px;">
+          <ion-text color="light">الاصوات</ion-text> <br> <b>
+            <ion-label color="warning">{{NombreElecteur}}</ion-label>
+          </b>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="grid" >
+    <div class="col" *ngFor="let listeCc of listeCc">
+      <ion-thumbnail *ngIf="listeCc.logo != null" item-start>
+           <ion-avatar>
+        <ion-img style="margin-left:25%;top:15px;" [src]=listeCc.logo> </ion-img> 
+      </ion-avatar>
+      </ion-thumbnail>
+
+       
+            <ion-thumbnail *ngIf="listeCc.logo == null" item-start>
+            <ion-avatar>
+            <img style="margin-left:25%;top:-10px;position:relative;width:80px;height:70px;" src="../assets/image/c.png">
+          </ion-avatar>
+        </ion-thumbnail>
+      
+
+      <ion-label class="ph1"> <h2> {{listeCc.nom}}</h2></ion-label>
+      <ion-label  class="ph"> <h2>{{listeCc.pourcentage}} % <br></h2> </ion-label>
+    <br>
+    
+   
+    <ion-button class="butt" shape="round" color="warning" (click)="OpenDetails(listeCc.id)"><ion-label color="primary"><b>التفاصيل</b></ion-label></ion-button>
+
+      </div>
+    </div>
+
+</ion-content>

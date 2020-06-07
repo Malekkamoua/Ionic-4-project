@@ -1,0 +1,179 @@
+ion-content {
+    --background: url('../../assets/image/logo.png');
+}
+
+ion-title {
+    font-family: "Cairo", sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 12px;
+}
+
+.search {
+    position: absolute;
+    right: 30px;
+    top: -16px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.filtre {
+    background-color: rgb(225, 192, 7);
+    top: 34px;
+    width: 310px;
+    height: 35px;
+    border-radius: 1000px;
+    position: absolute;
+}
+
+ion-select {
+    color: #083378;
+    top: -10px;
+    position: relative;
+    width: 70px;
+    right: -5px;
+}
+
+h1 {
+    margin-left: 40%;
+    margin-bottom: 10px;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.lab {
+    top: 32px;
+    position: absolute;
+    font-family: 'Cairo', sans-serif;
+}
+
+.labb {
+    top: 10px;
+    position: absolute;
+}
+
+.cheks {
+    --background-checked: #ffffff;
+
+    background: #ffffff;
+
+}
+
+.chekss {
+    --background-checked: #e1c007;
+
+    background: #e1c007;
+
+}
+
+.welcome-card {
+    top: -5px;
+    position: relative;
+}
+
+.abc {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
+
+.grid-column {
+    border: 1px #e1c007 dashed;
+}
+
+.butt1 {
+    font-family: 'Cairo', sans-serif;
+    color: #083378;
+    width: 70px;
+    height: 25px;
+    border-radius: 100%;
+    left: 155px;
+    position: absolute;
+}
+
+.tableau {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 33% 33% 33%;
+    position: relative;
+    left: 26px;
+}
+
+.ph {
+    text-align: center;
+
+    font-family: 'Cairo', sans-serif;
+    color: #e1c007;
+    position: relative;
+    left: 9px;
+}
+
+.ph1 {
+    text-align: center;
+    color: #ffffff;
+
+    font-family: 'Cairo', sans-serif;
+    position: relative;
+    left: 9px;
+}
+
+.img {
+    width: 60%;
+    top: 60%;
+    position: relative;
+}
+
+.butt {
+    font-family: "Cairo", sans-serif;
+    color: #083378;
+    width: 70px;
+    height: 25px;
+    border-radius: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.ph {
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    color: #e1c007;
+    position: relative;
+    left: 9px;
+    top: 30px;
+}
+
+.ph1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Cairo', sans-serif;
+    position: relative;
+    left: 3px;
+    top: 25px;
+}
+
+.grid {
+    margin: 8% 5% 5% 10%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    grid-row-gap: 50px;
+    align-items: stretch;
+    justify-content: stretch;
+    margin-left: 10px;
+    height: 95%;
+
+}
+
+.butttt {
+    font-family: 'Cairo', sans-serif;
+    color: #083378;
+    width: 70px;
+    height: 25px;
+    border-radius: 100%;
+    top: -2px;
+    position: relative;
+    left: 10px;
+}
+
+.closing {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

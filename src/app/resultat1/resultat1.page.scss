@@ -1,0 +1,104 @@
+.search {
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  font-family: "Cairo", sans-serif;
+}
+
+.filtre {
+  background-color: #e1c007;
+  width: 100%;
+  height: 35px;
+  border-radius: 100px;
+  position: absolute;
+  left: 1%;
+  top: 13%;
+}
+
+ion-title {
+  font-family: "Cairo", sans-serif;
+  color: #083378;
+  position: absolute;
+  left: 70%;
+}
+
+ion-select {
+  color: #083378;
+  top: -12px;
+  position: relative;
+  width: 70px;
+  right: 10%;
+}
+
+ion-content {
+  --background: url('../../assets/image/logo.png');
+}
+
+.lab {
+  top: 32px;
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+}
+
+.labb {
+  top: 10px;
+  position: absolute;
+}
+
+.cheks {
+  --background-checked: #ffffff;
+  background: #ffffff;
+}
+
+.chekss {
+  --background-checked: #e1c007;
+  background: #e1c007;
+}
+
+.welcome-card {
+  top: 24px;
+}
+
+.grid {
+  margin: 22% 5% 5% 10%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+  grid-row-gap: 50px;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: stretch;
+  justify-content: stretch;
+  margin-left: 12px;
+  /* margin-right: 30px; */
+  height: 95%;
+
+}
+
+.butt {
+  font-family: 'Cairo', sans-serif;
+  color: #083378;
+  width: 70px;
+  height: 30px;
+  border-radius: 100%;
+  position: relative;
+  top: 10px;
+  left: 10%;
+}
+
+.ph {
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  color: #e1c007;
+  position: relative;
+  left: 9px;
+  top: 30px;
+}
+
+.ph1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Cairo', sans-serif;
+  position: relative;
+  left: 3px;
+  top: 25px;
+}

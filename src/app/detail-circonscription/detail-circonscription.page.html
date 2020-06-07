@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-img src="../assets/image/a.png" width='70px' height='2px' style="float:left; margin-left:2%;top:'540px';">
+    </ion-img>
+    <ion-title color="primary">تفاصيل الدائرة<ion-icon
+        ios="ios-arrow-dropright" md="md-arrow-dropright" color="primary" routerLink="/liste"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4>{{nomCc}}</h4>
+  <br>
+  <ion-grid>
+    <ion-row class="abc">
+      <ion-col class="grid-column" style="margin-left:25px;">
+        <ion-text color="light">عدد القائمات المترشحة</ion-text>
+      </ion-col>
+      <ion-col class="grid-column" style="margin-right:25px;">
+        <ion-text color="light">عدد المقاعد</ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="abc">
+      <ion-col class="grid-column" style="margin-left:25px;">
+        <ion-text color="warning"> {{NombreListesCc}} </ion-text>
+      </ion-col>
+      <ion-col class="grid-column" style="margin-right:25px;">
+        <ion-text color="warning"> {{NombreSiegesCc}} </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div>
+    <ion-list class="filtre1" >
+      <ion-item color="warning">
+        <ion-label class="search1" color="primary"><b>اضغط هنا لتغيير نوعية القائمة</b></ion-label>
+      <ion-select okText="موافق" cancelText="رجوع" (ionChange)="onContextChange($event.detail.value)">
+        
+          <ion-select-option value="حزبية">حزبية</ion-select-option>
+          <ion-select-option value="إئتلافية">إئتلافية</ion-select-option>
+          <ion-select-option value="مستقلة">مستقلة</ion-select-option>
+          </ion-select>
+          </ion-item>
+          </ion-list>
+      </div>
+
+  <div>
+    <button class="submit" (click)="all($event.detail)">
+      <ion-label class="search2"><h2><b>كل القائمات</b></h2></ion-label>
+    </button>
+  </div>
+<br>
+  <div class="grid">
+    <div *ngFor="let listeCc of listeCc">
+      
+        <ion-thumbnail *ngIf="listeCc.logo != null" item-start>
+          <ion-avatar>
+              <ion-img style="margin-left:33px;top:15px;" [src]=listeCc.logo> </ion-img> 
+            </ion-avatar>
+            </ion-thumbnail>
+ 
+              <ion-thumbnail *ngIf="listeCc.logo == null" item-start>
+              <ion-avatar>
+              <img style="margin-left:35px;top:-10px;position:relative;width:100px;height:70px;" src="../assets/image/c.png">
+            </ion-avatar>
+          </ion-thumbnail>
+
+     <ion-label class="ph"><h2>{{listeCc.nom}}</h2></ion-label> 
+      <ion-button class="butt" shape="round" color="warning" (click)="DetailsListe(listeCc)" ><ion-label color="primary"><b>التفاصيل</b></ion-label></ion-button>
+  </div>
+</div>
+
+</ion-content>
+
+
+<ion-tab-bar slot="bottom" color="warning">
+  <ion-tab-button routerLink="/resultat">
+    <ion-img class="labb" src="../assets/image/1a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">النتائج
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/liste">
+    <ion-img class="labb" src="../assets/image/2a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="primary">القائمات
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/client">
+    <ion-img class="labb" src="../assets/image/3a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">من نحن
+    </ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button routerLink="/home">
+    <ion-img class="labb" src="../assets/image/4a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">تشريعية 2019
+    </ion-label>
+  </ion-tab-button>
+
+</ion-tab-bar>

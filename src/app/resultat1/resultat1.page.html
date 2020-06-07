@@ -1,0 +1,93 @@
+
+<ion-header>
+    <ion-toolbar><ion-img src="../assets/image/a.png"  width='70px' height='2px' style="float:left; margin-left:2%;top:'550px';"></ion-img>
+      <ion-title > النتائج </ion-title>      
+    </ion-toolbar>
+  </ion-header>
+  
+   
+  <ion-content>
+  
+    <ion-segment >
+        <ion-segment-button routerLink="/resultat1" class="cheks" >
+        <ion-label color="primary" shape="round" style="font-family: 'Cairo', sans-serif;"> <b>نتائج الدوائر</b> </ion-label>
+        </ion-segment-button>
+        <ion-segment-button  routerLink="/resultat2"  class="chekss"  >
+         <ion-label color="primary" style="font-family: 'Cairo', sans-serif;"><b>نتائج  مجلس نواب الشعب </b></ion-label>
+        </ion-segment-button>
+    </ion-segment>  
+    
+     <ion-list class ="filtre">
+    <ion-item color="warning">
+      <ion-label class="search" color="primary"  text-align="right">الدائرة الانتخابية</ion-label>
+      <ion-select (ionChange)="onContextChange($event.detail.value)" id="selection" value="brown" okText="موافق"
+        cancelText="رجوع">
+        <div *ngFor="let circonscription of circonscription">
+          <ion-select-option value={{circonscription.nom}}> {{ circonscription.nom }} </ion-select-option>
+        </div>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  
+    <div class="grid" >
+        <div class="col" *ngFor="let listeModif of listeModif">
+          <ion-thumbnail *ngIf="listeModif.logo != null" item-start>
+               <ion-avatar>
+            <ion-img style="margin-left:25%;top:15px;" [src]=listeModif.logo> </ion-img> 
+          </ion-avatar>
+          </ion-thumbnail>
+
+           
+                <ion-thumbnail *ngIf="listeModif.logo == null" item-start>
+                <ion-avatar>
+                <img style="margin-left:25%;top:-10px;position:relative;width:80px;height:70px;" src="../assets/image/c.png">
+              </ion-avatar>
+            </ion-thumbnail>
+          
+  
+          <ion-label class="ph1"> <h2> {{listeModif.nom}}</h2></ion-label>
+          <ion-label  class="ph"> <h2>{{listeModif.pourcentage}} % <br></h2> </ion-label>
+        <br>
+        
+        <ion-footer style="padding-bottom: 20px;">
+        <ion-button class="butt"  shape="round" color="warning" (click)="DetailsListe(listeModif)"><ion-label color="primary"><b>التفاصيل</b></ion-label></ion-button>
+  </ion-footer>
+          </div>
+        </div>
+  
+  </ion-content>
+  
+  
+  
+  <ion-tab-bar slot="bottom"  color="warning">
+    <ion-tab-button routerLink="/resultat">
+      <ion-img class="labb" src="../assets/image/1a.png" color="primary"></ion-img>
+      <ion-label class="lab" color="primary">النتائج
+      </ion-label>
+    </ion-tab-button>
+  
+  <ion-tab-button routerLink="/liste">
+    <ion-img class="labb" src="../assets/image/2a.png" color="primary"></ion-img>
+  <ion-label class="lab" color="light">القائمات
+  </ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button  routerLink="/client">
+    <ion-img class="labb" src="../assets/image/3a.png" color="primary"></ion-img>
+  <ion-label class="lab" color="light">من نحن
+  </ion-label>
+  </ion-tab-button>
+  
+  <ion-tab-button  routerLink="/home">
+    <ion-img class="labb" src="../assets/image/4a.png" color="primary"></ion-img>
+    <ion-label class="lab" color="light">تشريعية 2019
+    </ion-label>
+  </ion-tab-button>
+  </ion-tab-bar>
+  
+  
+  <script>
+      $( document ).ready(function() {
+        console.log( "ready!" );
+    });
+  </script>
